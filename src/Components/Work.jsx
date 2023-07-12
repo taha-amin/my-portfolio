@@ -40,7 +40,7 @@ const Work = () => {
                   rel="noreferrer"
                 >
                   <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
-                    Code
+                    GitHub
                   </button>
                 </a>
               </div>
@@ -73,7 +73,7 @@ const Work = () => {
                   rel="noreferrer"
                 >
                   <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
-                    Code
+                    GitHub
                   </button>
                 </a>
               </div>
