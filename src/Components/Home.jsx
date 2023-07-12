@@ -14,9 +14,7 @@ const Home = () => {
           I'm a Software Engineer
         </h2>
         <p className="text-[#8892b0] py-4 max-w-[700px]">
-          Full Stack Software Engineer with a fondness for clean, quality tested
-          code and a proponent for communication and problem solving. Quickly
-          adaptable, humble pupil, and proven self-learner.
+          Quickly adaptable, humble pupil, and proven self-learner.
         </p>
         <div>
           <button className="text-white group border-2 px-6 py-3 my-2 flex items-center hover:bg-pink-600 hover:border-pink-600">
