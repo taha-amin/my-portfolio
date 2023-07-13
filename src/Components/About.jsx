@@ -22,10 +22,10 @@ const About = () => {
               I am a results-driven professional with experience in building
               high-quality mobile and web applications. With a strong foundation
               in JavaScript, React, and Node.js, I thrive in collaborative
-              environments, leveraging my skills to create innovative solutions.
-              I am motivated by challenges and dedicated to delivering
-              exceptional user experiences. Let's connect and explore
-              opportunities to contribute to exciting projects together!
+              environments, using my skills to create innovative solutions. I am
+              motivated by challenges and dedicated to delivering exceptional
+              user experiences. Let's connect and explore opportunities to
+              contribute to exciting projects together!
             </p>
           </div>
         </div>
