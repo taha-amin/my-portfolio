@@ -1,6 +1,7 @@
 import React from "react";
 import Futboard from "../Assets/Projects/futboard.png";
 import Shift2Shift from "../Assets/Projects/shift2shift.png";
+import Netibot from "../Assets/Projects/netibot.png";
 
 const Work = () => {
   return (
@@ -69,6 +70,39 @@ const Work = () => {
                 </a>
                 <a
                   href="https://github.com/Kevin-Roney/shift2shift"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
+                    GitHub
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          {/* Grid Item // NETIBOT */}
+          <div
+            style={{ backgroundImage: `url(${Netibot})` }}
+            className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div"
+          >
+            {/* Hover Effects // NETIBOT */}
+            <div className="opacity-0 group-hover:opacity-100">
+              <span className="text-2xl-center font-bold text-white tracking-wider">
+                JS MongoDB Application
+              </span>
+              <div className="pt-8 text-center">
+                <a
+                  href="https://discord.com/api/oauth2/authorize?client_id=997611125887733923&permissions=8&scope=bot%20applications.commands"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
+                    Invite Link
+                  </button>
+                </a>
+                <a
+                  href="https://github.com/NetiBot/NetiBotApp"
                   target="_blank"
                   rel="noreferrer"
                 >
