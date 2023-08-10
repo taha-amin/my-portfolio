@@ -23,12 +23,12 @@ const Work = () => {
           >
             {/* Hover Effects // JOB APP */}
             <div className="opacity-0 group-hover:opacity-100">
-              <span className="text-2xl font-bold text-black tracking-wider">
-                MERN Stack Application
-              </span>
+              {/* <span className="text-2xl font-bold text-black tracking-wider">
+                MERN Stack
+              </span> */}
               <div className="pt-8 text-center">
                 {/* Don't forget to add live demo link here */}
-                <a href="/" target="_blank" rel="noreferrer">
+                <a href={`${JobApp}`} target="_blank" rel="noreferrer">
                   <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
                     Coming Soon
                   </button>
