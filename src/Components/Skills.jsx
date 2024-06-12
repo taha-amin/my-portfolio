@@ -5,6 +5,8 @@ import JavaScriptAsset from "../Assets/javascript.png";
 import NodeAsset from "../Assets/node.png";
 import PostgresqlAsset from "../Assets/postgresql.png";
 import ReactAsset from "../Assets/react.png";
+import NextJSAsset from "../Assets/nextjs.png";
+import TypeScriptAsset from "../Assets/typescript.png";
 
 const Skills = () => {
   return (
@@ -61,6 +63,22 @@ const Skills = () => {
               alt="Postgresql icon"
             />
             <p className="my-4">Postgresql</p>
+          </div>
+
+          {/* NextJS icon */}
+          <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
+            <img className="w-20 mx-auto" src={NextJSAsset} alt="NextJS icon" />
+            <p className="my-4">Next.JS</p>
+          </div>
+
+          {/* TypeScript icon */}
+          <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
+            <img
+              className="w-20 mx-auto"
+              src={TypeScriptAsset}
+              alt="TypeScript icon"
+            />
+            <p className="my-4">TypeScript</p>
           </div>
         </div>
       </div>
