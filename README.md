@@ -19,11 +19,15 @@ Passionate about software engineering and full-stack development, I am a results
 
 ### Project 1: Job Tracking App
 
+![Jobify](src/Assets/Projects/jobify.png)
+
 - **Description**: Take control of your job search with this beautiful stylized job tracker!
 - **GitHub Repository**: [GitHub Link](https://github.com/taha-amin/job-app-v2)
 - **Live Application**: [Application Link](https://applyzen.onrender.com)
 
 ### Project 2: Financial Dashboard
+
+![Acme Financial Dashboard](src/Assets/Projects/financialdashboard.png)
 
 - **Description**: A simplified financial dashboard built using NextJS and hosted on Vercel.
 - **GitHub Repository**: [GitHub Link](https://github.com/taha-amin/nextjs-dashboard)
@@ -33,6 +37,8 @@ Passionate about software engineering and full-stack development, I am a results
   - **Password**: 123456
 
 ### Project 3: NetiBot
+
+![NetiBot](src/Assets/Projects/netibot.png)
 
 - **Description**: Dynamic and entertaining Discord bot designed to enhance your server with a variety of fun & interactive commands.
 - **GitHub Repository**: [GitHub Link](https://github.com/NetiBot/NetiBotApp)
@@ -52,7 +58,3 @@ Feel free to reach out to me via:
 - **Email**: [mohamedamin2009ster@gmail.com](mailto:mohamedamin2009ster@gmail.com)
 - **LinkedIn**: [/in/mohaamin](https://www.linkedin.com/in/mohaamin/)
 - **GitHub**: [GitHub](https://github.com/taha-amin)
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
