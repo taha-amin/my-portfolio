@@ -3,7 +3,7 @@ import React from "react";
 // import Shift2Shift from "../Assets/Projects/shift2shift.png";
 import Dashboard from "../Assets/Projects/financialdashboard.png";
 import Netibot from "../Assets/Projects/netibot.png";
-import JobApp from "../Assets/Projects/jobapp.png";
+import JobApp from "../Assets/Projects/jobify.png";
 
 const Work = () => {
   return (
@@ -29,9 +29,13 @@ const Work = () => {
               </span> */}
               <div className="pt-8 text-center">
                 {/* Don't forget to add live demo link here */}
-                <a href={`${JobApp}`} target="_blank" rel="noreferrer">
+                <a
+                  href="https://applyzen.onrender.com"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
-                    Coming Soon
+                    Try It Out
                   </button>
                 </a>
                 <a
@@ -54,9 +58,6 @@ const Work = () => {
           >
             {/* Hover Effects // NEXTJS DASHBOARD */}
             <div className="opacity-0 group-hover:opacity-100">
-              <span className="text-2xl font-bold text-white tracking-wider">
-                React JS Application
-              </span>
               <div className="pt-8 text-center">
                 <a
                   href="https://nextjs-dashboard-lemon-five.vercel.app/"
@@ -87,9 +88,6 @@ const Work = () => {
           >
             {/* Hover Effects // NETIBOT */}
             <div className="opacity-0 group-hover:opacity-100">
-              <span className="text-2xl font-bold text-white tracking-wider">
-                JS MongoDB Application
-              </span>
               <div className="pt-8 text-center">
                 <a
                   href="https://discord.com/api/oauth2/authorize?client_id=997611125887733923&permissions=8&scope=bot%20applications.commands"
