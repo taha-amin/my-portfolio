@@ -1,6 +1,4 @@
 import React from "react";
-import CSSAsset from "../Assets/css.png";
-import HTMLAsset from "../Assets/html.png";
 import JavaScriptAsset from "../Assets/javascript.png";
 import NodeAsset from "../Assets/node.png";
 import PostgresqlAsset from "../Assets/postgresql.png";
@@ -21,18 +19,6 @@ const Skills = () => {
         </div>
 
         <div className="w-full grid grid-cols-2 sm:grid-cols-3 gap-4 text-center py-8">
-          {/* HTML icon */}
-          <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
-            <img className="w-20 mx-auto" src={HTMLAsset} alt="HTML icon" />
-            <p className="my-4">HTML</p>
-          </div>
-
-          {/* CSS icon */}
-          <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
-            <img className="w-20 mx-auto" src={CSSAsset} alt="CSS icon" />
-            <p className="my-4">CSS</p>
-          </div>
-
           {/* React icon */}
           <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
             <img className="w-20 mx-auto" src={ReactAsset} alt="React icon" />
