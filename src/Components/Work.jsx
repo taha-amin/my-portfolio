@@ -1,9 +1,8 @@
 import React from "react";
-// import Futboard from "../Assets/Projects/futboard.png";
-// import Shift2Shift from "../Assets/Projects/shift2shift.png";
-import Dashboard from "../Assets/Projects/financialdashboard.png";
-import Netibot from "../Assets/Projects/netibot.png";
 import JobApp from "../Assets/Projects/jobify.png";
+import Dashboard from "../Assets/Projects/financialdashboard.png";
+import Blog from "../Assets/Projects/blog.png";
+import Netibot from "../Assets/Projects/netibot.png";
 
 const Work = () => {
   return (
@@ -70,6 +69,36 @@ const Work = () => {
                 </a>
                 <a
                   href="https://github.com/taha-amin/nextjs-dashboard"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
+                    GitHub
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          {/* Grid Item // NEXTJS BLOG */}
+          <div
+            style={{ backgroundImage: `url(${Blog})` }}
+            className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div"
+          >
+            {/* Hover Effects // NEXTJS BLOG */}
+            <div className="opacity-0 group-hover:opacity-100">
+              <div className="pt-8 text-center">
+                <a
+                  href="https://nextjs-blog-mu-snowy-13.vercel.app/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
+                    Live Site
+                  </button>
+                </a>
+                <a
+                  href="https://github.com/taha-amin/nextjs-blog"
                   target="_blank"
                   rel="noreferrer"
                 >

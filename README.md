@@ -33,10 +33,19 @@ Passionate about software engineering and full-stack development, I am a results
 - **GitHub Repository**: [GitHub Link](https://github.com/taha-amin/nextjs-dashboard)
 - **Live Demo**: [Demo Link](https://nextjs-dashboard-lemon-five.vercel.app/)
 - **Credentials for Access**:
+
   - **Email**: user@nextmail.com
   - **Password**: 123456
 
-### Project 3: NetiBot
+  ### Project 3: Blog
+
+![NetiBot](src/Assets/Projects/blog.png)
+
+- **Description**: This project is a simple blog application built with Next.js to demonstrate its basic features, including static site generation and dynamic routing.
+- **GitHub Repository**: [GitHub Link](https://github.com/taha-amin/nextjs-blog)
+- **Invite Link**: [Live Site](https://nextjs-blog-mu-snowy-13.vercel.app/)
+
+### Project 4: NetiBot
 
 ![NetiBot](src/Assets/Projects/netibot.png)
 
