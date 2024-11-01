@@ -37,7 +37,7 @@ Passionate about software engineering and full-stack development, I am a results
   - **Email**: user@nextmail.com
   - **Password**: 123456
 
-  ### Project 3: Blog
+### Project 3: Blog
 
 ![NetiBot](src/Assets/Projects/blog.png)
 
