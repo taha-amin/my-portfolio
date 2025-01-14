@@ -1,148 +1,76 @@
-import React from "react";
-import { useState } from "react";
-import { FaBars, FaTimes, FaGithub, FaLinkedin } from "react-icons/fa";
-import { HiOutlineMail } from "react-icons/hi";
-import { BsPersonLinesFill } from "react-icons/bs";
-import ProfilePicture from "../Assets/profilepicture.png";
+import React, { useState } from "react";
 import { Link } from "react-scroll";
-import Resume from "../Assets/MohamedAminResume.pdf";
 
 const Navbar = () => {
-  const [nav, setNav] = useState(false);
-  const handleClick = () => setNav(!nav);
+  const [isOpen, setIsOpen] = useState(false);
+
+  const navItems = [
+    { name: "Home", to: "home" },
+    { name: "Work", to: "work" },
+  ];
 
   return (
-    <div className="fixed w-full h-[80px] flex justified-between items-center px-4 bg-[#0a192f] text-gray-300">
-      <div>
-        <img src={ProfilePicture} alt="Profile Pic" style={{ width: "50px" }} />
-      </div>
+    <nav className="fixed w-full bg-white/80 backdrop-blur-sm z-50">
+      <div className="max-w-[1000px] mx-auto px-8 py-4 flex justify-between items-center">
+        <div className="hidden md:flex space-x-8">
+          {navItems.map((item) => (
+            <Link
+              key={item.name}
+              to={item.to}
+              smooth={true}
+              duration={500}
+              className="text-gray-600 hover:text-black cursor-pointer"
+            >
+              {item.name}
+            </Link>
+          ))}
+        </div>
 
-      {/* Menu */}
-      <ul className="hidden md:flex">
-        <li>
-          <Link to="home" smooth={true} duration={500}>
-            Home
-          </Link>
-        </li>
-        <li>
-          <Link to="about" smooth={true} duration={500}>
-            About
-          </Link>
-        </li>
-        <li>
-          {" "}
-          <Link to="skills" smooth={true} duration={500}>
-            Skills
-          </Link>
-        </li>
-        <li>
-          {" "}
-          <Link to="work" smooth={true} duration={500}>
-            Work
-          </Link>
-        </li>
-        <li>
-          {" "}
-          <Link to="contact" smooth={true} duration={500}>
-            Contact
-          </Link>
-        </li>
-      </ul>
-
-      {/* Hamburger */}
-      <div onClick={handleClick} className="md:hidden z-10">
-        {!nav ? <FaBars /> : <FaTimes />}
+        {/* Mobile Menu Button */}
+        <button className="md:hidden" onClick={() => setIsOpen(!isOpen)}>
+          <svg
+            className="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            {isOpen ? (
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M6 18L18 6M6 6l12 12"
+              />
+            ) : (
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            )}
+          </svg>
+        </button>
       </div>
 
       {/* Mobile Menu */}
-      <ul
-        className={
-          !nav
-            ? "hidden"
-            : "absolute top-0 left-0 w-full h-screen bg-[#0a192f] flex flex-col justify-center items-center"
-        }
-      >
-        <li className="py-6 text-4xl">
-          <Link onClick={handleClick} to="home" smooth={true} duration={500}>
-            Home
-          </Link>
-        </li>
-        <li className="py-6 text-4xl">
-          <Link onClick={handleClick} to="about" smooth={true} duration={500}>
-            About
-          </Link>
-        </li>
-        <li className="py-6 text-4xl">
-          {" "}
-          <Link onClick={handleClick} to="skills" smooth={true} duration={500}>
-            Skills
-          </Link>
-        </li>
-        <li className="py-6 text-4xl">
-          {" "}
-          <Link onClick={handleClick} to="work" smooth={true} duration={500}>
-            Work
-          </Link>
-        </li>
-        <li className="py-6 text-4xl">
-          {" "}
-          <Link onClick={handleClick} to="contact" smooth={true} duration={500}>
-            Contact
-          </Link>
-        </li>
-      </ul>
-
-      {/* Social Icons */}
-      <div className="hidden lg:flex fixed flex-col top-[35%] left-0">
-        <ul>
-          {/* LinkedIn Icon */}
-          <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-600">
-            <a
-              className="flex justify-between items-center w-full text-gray-300"
-              href="https://www.linkedin.com/in/mohaamin/"
-              target="_blank"
-              rel="noreferrer"
+      {isOpen && (
+        <div className="md:hidden absolute w-full bg-white border-t px-8">
+          {navItems.map((item) => (
+            <Link
+              key={item.name}
+              to={item.to}
+              smooth={true}
+              duration={500}
+              className="block py-2 text-gray-600 hover:text-black hover:bg-gray-50"
+              onClick={() => setIsOpen(false)}
             >
-              LinkedIn <FaLinkedin size={30} />
-            </a>
-          </li>
-          {/* GitHub Icon */}
-          <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#333333]">
-            <a
-              className="flex justify-between items-center w-full text-gray-300"
-              href="https://github.com/taha-amin"
-              target="_blank"
-              rel="noreferrer"
-            >
-              GitHub <FaGithub size={30} />
-            </a>
-          </li>
-          {/* E-Mail Icon */}
-          <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-green-600">
-            <a
-              className="flex justify-between items-center w-full text-gray-300"
-              href="/"
-            >
-              <Link to="contact" smooth={true} duration={500}>
-                E-Mail
-              </Link>{" "}
-              <HiOutlineMail size={30} />
-            </a>
-          </li>
-          {/* Resume Icon */}
-          <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#565f69]">
-            <a
-              className="flex justify-between items-center w-full text-gray-300"
-              href={`${Resume}`}
-              target="_blank"
-              rel="noreferrer"
-            >
-              Resume <BsPersonLinesFill size={30} />
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
+              {item.name}
+            </Link>
+          ))}
+        </div>
+      )}
+    </nav>
   );
 };
 

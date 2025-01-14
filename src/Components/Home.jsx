@@ -1,31 +1,66 @@
 import React from "react";
-import { HiArrowNarrowRight } from "react-icons/hi";
-import { Link } from "react-scroll";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 const Home = () => {
+  const socialIcons = [
+    {
+      name: "GitHub",
+      url: "https://github.com/taha-amin",
+      icon: <FaGithub size={24} />,
+    },
+    {
+      name: "LinkedIn",
+      url: "https://www.linkedin.com/in/mohaamin/",
+      icon: <FaLinkedin size={24} />,
+    },
+  ];
   return (
-    <div name="home" className="w-full h-screen bg-[#0a192f]">
-      {/* Container */}
-      <div className="max-w-[1000px] mx-auto px-0 flex flex-col justify-center h-full">
-        <p className="text-pink-600">Hi, my name is</p>
-        <h1 className="text-4xl sm:text-7xl font-bold text-[#ccd6f6]">
-          Mohamed Amin
-        </h1>
-        <h2 className="text-4xl sm:text-7xl font-bold text-[#8892b0]">
-          I'm a Software Engineer
-        </h2>
-        <p className="text-[#8892b0] py-4 max-w-[700px]">
-          Quickly adaptable, humble pupil, and proven self-learner.
-        </p>
-        <div>
-          <button className="text-white group border-2 px-6 py-3 my-2 flex items-center hover:bg-pink-600 hover:border-pink-600">
-            <Link to="work" smooth={true} duration={500}>
-              View Work
-            </Link>
-            <span className="group-hover:rotate-90 duration-300">
-              <HiArrowNarrowRight className="ml-3" />
-            </span>
-          </button>
+    <div name="home" className="w-full h-screen bg-white">
+      <div className="max-w-[1000px] mx-auto px-8 flex flex-col justify-center h-full">
+        <div className="space-y-4">
+          <h1 className="text-6xl sm:text-7xl font-bold">Mohamed Amin</h1>
+          <h2 className="text-2xl sm:text-3xl text-gray-600">
+            Software Engineer based in Portland, Oregon
+          </h2>
+          <p className="text-gray-600 max-w-[600px] leading-relaxed">
+            Over the years I've delivered optimized, user-focused applications,
+            specializing in scalable web solutions with rich user interfaces
+            built using JavaScript. Currently, I'm building innovative AI agent
+            solutions at{" "}
+            <a
+              href="https://www.argoh.dev/"
+              style={{ textDecoration: "underline black" }}
+              target="_blank"
+              rel="noreferrer"
+            >
+              Argoh.dev
+            </a>
+          </p>
+          <p className="text-gray-600 max-w-[600px] leading-relaxed">
+            {/* ESLint was causing some issues with the spaces in this JSX code so I used curly braces with string literals to fix the issue */}
+            {`If you'd like to collaborate, please `}
+            <a
+              href="mailto:mohamedamin2009ster@gmail.com"
+              style={{ textDecoration: "underline black" }}
+            >
+              send me an email
+            </a>
+            {` or reach out to any of my social handles`}
+          </p>
+          <div className="flex space-x-6">
+            {socialIcons.map((social) => (
+              <a
+                key={social.name}
+                href={social.url}
+                target="_blank"
+                rel="noreferrer"
+                className="text-gray-600 hover:text-black transition-colors duration-300"
+                aria-label={social.name}
+              >
+                {social.icon}
+              </a>
+            ))}
+          </div>
         </div>
       </div>
     </div>
