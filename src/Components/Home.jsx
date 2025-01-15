@@ -15,33 +15,38 @@ const Home = () => {
     },
   ];
   return (
-    <div name="home" className="w-full h-screen bg-white">
+    <div
+      name="home"
+      className="w-full h-screen bg-white dark:bg-gray-900 transition-colors duration-200"
+    >
       <div className="max-w-[1000px] mx-auto px-8 flex flex-col justify-center h-full">
         <div className="space-y-4">
-          <h1 className="text-6xl sm:text-7xl font-bold">Mohamed Amin</h1>
-          <h2 className="text-2xl sm:text-3xl text-gray-600">
+          <h1 className="text-6xl sm:text-7xl font-bold dark:text-white transition-colors duration-200">
+            Mohamed Amin
+          </h1>
+          <h2 className="text-2xl sm:text-3xl text-gray-600 dark:text-gray-300 transition-colors duration-200">
             Software Engineer based in Portland, Oregon
           </h2>
-          <p className="text-gray-600 max-w-[600px] leading-relaxed">
+          <p className="text-gray-600 dark:text-gray-300 max-w-[600px] leading-relaxed transition-colors duration-200">
             Over the years I've delivered optimized, user-focused applications,
             specializing in scalable web solutions with rich user interfaces
             built using JavaScript. Currently, I'm building innovative AI agent
             solutions at{" "}
             <a
               href="https://www.argoh.dev/"
-              style={{ textDecoration: "underline black" }}
+              className="underline decoration-black dark:decoration-white hover:decoration-2"
               target="_blank"
               rel="noreferrer"
             >
               Argoh.dev
             </a>
           </p>
-          <p className="text-gray-600 max-w-[600px] leading-relaxed">
+          <p className="text-gray-600 dark:text-gray-300 max-w-[600px] leading-relaxed transition-colors duration-200">
             {/* ESLint was causing some issues with the spaces in this JSX code so I used curly braces with string literals to fix the issue */}
             {`If you'd like to collaborate, please `}
             <a
               href="mailto:mohamedamin2009ster@gmail.com"
-              style={{ textDecoration: "underline black" }}
+              className="underline decoration-black dark:decoration-white hover:decoration-2"
             >
               send me an email
             </a>
@@ -54,7 +59,7 @@ const Home = () => {
                 href={social.url}
                 target="_blank"
                 rel="noreferrer"
-                className="text-gray-600 hover:text-black transition-colors duration-300"
+                className="text-gray-600 dark:text-gray-300 hover:text-black dark:hover:text-white transition-colors duration-200"
                 aria-label={social.name}
               >
                 {social.icon}
