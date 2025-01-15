@@ -46,10 +46,17 @@ const Work = () => {
   ];
 
   return (
-    <div name="work" className="w-full min-h-screen bg-white py-20">
+    <div
+      name="work"
+      className="w-full min-h-screen bg-white dark:bg-gray-900 py-20 transition-colors duration-200"
+    >
       <div className="max-w-[1000px] mx-auto p-8">
-        <h2 className="text-4xl font-bold mb-2">Featured Projects</h2>
-        <p className="text-gray-600 mb-12">Some things I've built</p>
+        <h2 className="text-4xl font-bold mb-2 dark:text-white transition-colors duration-200">
+          Featured Projects
+        </h2>
+        <p className="text-gray-600 dark:text-gray-400 mb-12 transition-colors duration-200">
+          Some things I've built
+        </p>
 
         <div className="space-y-20">
           {projects.map((project, index) => (
@@ -66,15 +73,19 @@ const Work = () => {
 
               {/* Project Info */}
               <div className="space-y-4">
-                <h3 className="text-2xl font-bold">{project.title}</h3>
-                <p className="text-gray-600">{project.description}</p>
+                <h3 className="text-2xl font-bold dark:text-white transition-colors duration-200">
+                  {project.title}
+                </h3>
+                <p className="text-gray-600 dark:text-gray-400 transition-colors duration-200">
+                  {project.description}
+                </p>
 
                 {/* Tech Stack */}
                 <div className="flex flex-wrap gap-2">
                   {project.tech.map((tech, i) => (
                     <span
                       key={i}
-                      className="px-3 py-1 bg-gray-100 text-sm rounded-full"
+                      className="px-3 py-1 bg-gray-100 dark:bg-gray-800 dark:text-gray-300 text-sm rounded-full transition-colors duration-200"
                     >
                       {tech}
                     </span>
@@ -87,7 +98,7 @@ const Work = () => {
                     href={project.demo}
                     target="_blank"
                     rel="noreferrer"
-                    className="px-6 py-2 border-2 border-black text-black hover:bg-black hover:text-white transition-all duration-300"
+                    className="px-6 py-2 border-2 border-black dark:border-white text-black dark:text-white hover:bg-black dark:hover:bg-white hover:text-white dark:hover:text-black transition-all duration-300"
                   >
                     Live Demo
                   </a>
@@ -95,7 +106,7 @@ const Work = () => {
                     href={project.github}
                     target="_blank"
                     rel="noreferrer"
-                    className="px-6 py-2 border-2 border-gray-300 text-gray-600 hover:border-gray-600 hover:text-gray-900 transition-all duration-300"
+                    className="px-6 py-2 border-2 border-gray-300 dark:border-gray-600 text-gray-600 dark:text-gray-400 hover:border-gray-600 dark:hover:border-gray-300 hover:text-gray-900 dark:hover:text-gray-200 transition-all duration-300"
                   >
                     GitHub
                   </a>
