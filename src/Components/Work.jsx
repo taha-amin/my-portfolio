@@ -60,7 +60,10 @@ const Work = () => {
 
         <div className="space-y-20">
           {projects.map((project, index) => (
-            <div key={index} className="grid md:grid-cols-2 gap-8 items-center">
+            <div
+              key={index}
+              className="grid md:grid-cols-2 gap-8 items-center p-6 rounded-lg transition-all duration-300 hover:bg-gray-100 dark:hover:bg-gray-800 hover:shadow-lg"
+            >
               {/* Project Image */}
               <div className="relative group">
                 <img
