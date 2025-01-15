@@ -1,5 +1,7 @@
 import React from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
+import ProfilePicture from "../Assets/profilepicture.png";
+import Resume from "../Assets/MohamedAminResume.pdf";
 
 const Home = () => {
   const socialIcons = [
@@ -21,6 +23,13 @@ const Home = () => {
     >
       <div className="max-w-[1000px] mx-auto px-8 flex flex-col justify-center h-full">
         <div className="space-y-4">
+          <div className="flex items-center">
+            <img
+              src={ProfilePicture}
+              alt="Mohamed Amin"
+              className="w-40 h-40 rounded-full object-cover mr-4"
+            />
+          </div>
           <h1 className="text-6xl sm:text-7xl font-bold dark:text-white transition-colors duration-200">
             Mohamed Amin
           </h1>
@@ -52,19 +61,29 @@ const Home = () => {
             </a>
             {` or reach out to any of my social handles`}
           </p>
-          <div className="flex space-x-6">
-            {socialIcons.map((social) => (
-              <a
-                key={social.name}
-                href={social.url}
-                target="_blank"
-                rel="noreferrer"
-                className="text-gray-600 dark:text-gray-300 hover:text-black dark:hover:text-white transition-colors duration-200"
-                aria-label={social.name}
-              >
-                {social.icon}
-              </a>
-            ))}
+          <div className="pt-4">
+            <div className="flex space-x-6 mb-8">
+              {socialIcons.map((social) => (
+                <a
+                  key={social.name}
+                  href={social.url}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-gray-600 dark:text-gray-300 hover:text-black dark:hover:text-white transition-colors duration-200"
+                  aria-label={social.name}
+                >
+                  {social.icon}
+                </a>
+              ))}
+            </div>
+            <a
+              href={Resume}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block text-gray-600 dark:text-gray-300 hover:text-black dark:hover:text-white underline transition-colors duration-200"
+            >
+              View Resume
+            </a>
           </div>
         </div>
       </div>
