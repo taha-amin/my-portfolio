@@ -50,19 +50,19 @@ const Work = () => {
       name="work"
       className="w-full min-h-screen bg-white dark:bg-gray-900 py-20 transition-colors duration-200"
     >
-      <div className="max-w-[1000px] mx-auto p-8">
-        <h2 className="text-4xl font-bold mb-2 dark:text-white transition-colors duration-200">
+      <div className="max-w-[1000px] mx-auto px-4 sm:px-8">
+        <h2 className="text-3xl sm:text-4xl font-bold mb-2 dark:text-white transition-colors duration-200">
           Featured Projects
         </h2>
-        <p className="text-gray-600 dark:text-gray-400 mb-12 transition-colors duration-200">
+        <p className="text-gray-600 dark:text-gray-400 mb-8 sm:mb-12 transition-colors duration-200">
           Some things I've built
         </p>
 
-        <div className="space-y-20">
+        <div className="space-y-12 sm:space-y-20">
           {projects.map((project, index) => (
             <div
               key={index}
-              className="grid md:grid-cols-2 gap-8 items-center p-6 rounded-lg transition-all duration-300 hover:bg-gray-100 dark:hover:bg-gray-800 hover:shadow-lg"
+              className="grid md:grid-cols-2 gap-6 sm:gap-8 items-center p-4 sm:p-6 rounded-lg transition-all duration-300 hover:bg-gray-100 dark:hover:bg-gray-800 hover:shadow-lg"
             >
               {/* Project Image */}
               <div className="relative group">

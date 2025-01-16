@@ -19,21 +19,21 @@ const Home = () => {
   return (
     <div
       name="home"
-      className="w-full h-screen bg-white dark:bg-gray-900 transition-colors duration-200"
+      className="w-full h-screen bg-white dark:bg-gray-900 transition-colors duration-200 pt-20"
     >
-      <div className="max-w-[1000px] mx-auto px-8 flex flex-col justify-center h-full">
+      <div className="max-w-[1000px] mx-auto px-4 sm:px-8 flex flex-col justify-center h-full">
         <div className="space-y-4">
-          <div className="flex items-center">
+          <div className="flex items-center justify-center sm:justify-start">
             <img
               src={ProfilePicture}
               alt="Mohamed Amin"
-              className="w-40 h-40 rounded-full object-cover mr-4"
+              className="w-32 h-32 sm:w-40 sm:h-40 rounded-full object-cover mr-4"
             />
           </div>
-          <h1 className="text-6xl sm:text-7xl font-bold dark:text-white transition-colors duration-200">
+          <h1 className="text-4xl sm:text-6xl md:text-7xl font-bold dark:text-white transition-colors duration-200">
             Mohamed Amin
           </h1>
-          <h2 className="text-2xl sm:text-3xl text-gray-600 dark:text-gray-300 transition-colors duration-200">
+          <h2 className="text-xl sm:text-2xl md:text-3xl text-gray-600 dark:text-gray-300 transition-colors duration-200">
             Software Engineer based in Portland, Oregon
           </h2>
           <p className="text-gray-600 dark:text-gray-300 max-w-[600px] leading-relaxed transition-colors duration-200">
