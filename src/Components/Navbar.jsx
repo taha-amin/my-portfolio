@@ -14,8 +14,8 @@ const Navbar = () => {
 
   return (
     <nav className="fixed w-full bg-white/80 dark:bg-gray-900/80 backdrop-blur-sm z-50 transition-colors duration-200">
-      <div className="max-w-[1000px] mx-auto px-8 py-4 flex justify-between items-center">
-        <div className="hidden md:flex space-x-8">
+      <div className="max-w-[1000px] mx-auto px-4 sm:px-8 py-4 flex justify-between items-center relative">
+        <div className="flex space-x-8">
           {navItems.map((item) => (
             <Link
               key={item.name}
@@ -35,54 +35,30 @@ const Navbar = () => {
           aria-label="Toggle theme"
         >
           {isDark ? (
-            <IoIosSunny className="text-white w-8 h-8" />
+            <IoIosSunny className="text-white w-6 h-6 sm:w-8 sm:h-8" />
           ) : (
-            <IoIosMoon className="text-gray-600 w-8 h-8" />
+            <IoIosMoon className="text-gray-600 w-6 h-6 sm:w-8 sm:h-8" />
           )}
         </button>
       </div>
 
-      {/* Mobile Menu Button */}
-      <button className="md:hidden" onClick={() => setIsOpen(!isOpen)}>
-        <svg
-          className="w-6 h-6"
-          fill="none"
-          stroke="currentColor"
-          viewBox="0 0 24 24"
-        >
-          {isOpen ? (
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={2}
-              d="M6 18L18 6M6 6l12 12"
-            />
-          ) : (
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={2}
-              d="M4 6h16M4 12h16M4 18h16"
-            />
-          )}
-        </svg>
-      </button>
-
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="md:hidden absolute w-full bg-white border-t px-8">
-          {navItems.map((item) => (
-            <Link
-              key={item.name}
-              to={item.to}
-              smooth={true}
-              duration={500}
-              className="block py-2 text-gray-600 hover:text-black hover:bg-gray-50"
-              onClick={() => setIsOpen(false)}
-            >
-              {item.name}
-            </Link>
-          ))}
+        <div className="md:hidden absolute w-full bg-white/95 dark:bg-gray-900/95 border-t border-gray-200 dark:border-gray-800">
+          <div className="max-w-[1000px] mx-auto px-4">
+            {navItems.map((item) => (
+              <Link
+                key={item.name}
+                to={item.to}
+                smooth={true}
+                duration={500}
+                className="block py-3 text-gray-600 dark:text-gray-300 hover:text-black dark:hover:text-white"
+                onClick={() => setIsOpen(false)}
+              >
+                {item.name}
+              </Link>
+            ))}
+          </div>
         </div>
       )}
     </nav>
