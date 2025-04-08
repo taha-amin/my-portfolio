@@ -1,11 +1,21 @@
 import React from "react";
+import Assaber from '../Assets/Projects/AssaberLogo.png';
 import JobApp from "../Assets/Projects/jobify.png";
 import Dashboard from "../Assets/Projects/financialdashboard.png";
 import Blog from "../Assets/Projects/blog.png";
-import Netibot from "../Assets/Projects/netibot.png";
+
 
 const Work = () => {
   const projects = [
+    // Add more projects here
+    {
+      title: "Masjed Assaber Website",
+      description:
+        "Built a clean, accessible site for Masjed Assaber to share events, services, and updates with its community.",
+      image: Assaber,
+      demo: "https://assaber.org/",
+      tech: ["WordPress", "HTML", "CSS"],
+    },
     {
       title: "Job Tracking App",
       description:
@@ -33,16 +43,6 @@ const Work = () => {
       github: "https://github.com/taha-amin/nextjs-blog",
       tech: ["Next.js", "React", "Markdown", "CSS Modules"],
     },
-    {
-      title: "NetiBot",
-      description:
-        "Dynamic and entertaining Discord bot designed to enhance your server with fun & interactive commands",
-      image: Netibot,
-      demo: "https://discord.com/api/oauth2/authorize?client_id=997611125887733923&permissions=8&scope=bot%20applications.commands",
-      github: "https://github.com/NetiBot/NetiBotApp",
-      tech: ["Node.js", "Discord.js", "MongoDB", "REST API"],
-    },
-    // Add more projects here
   ];
 
   return (
