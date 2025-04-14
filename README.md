@@ -17,7 +17,14 @@ Passionate about software engineering and full-stack development, I am a results
 
 ## Projects
 
-### Project 1: Job Tracking App
+### Project 1: Masjed Assaber Website
+
+![Jobify](src/Assets/Projects/AssaberLogo.png)
+
+- **Description**: Built a clean, accessible site for Masjed Assaber to share events, services, and updates with its community.
+- **Website**: [Live Website](https://assaber.org/)
+
+### Project 2: Job Tracking App
 
 ![Jobify](src/Assets/Projects/jobify.png)
 
@@ -44,14 +51,6 @@ Passionate about software engineering and full-stack development, I am a results
 - **Description**: This project is a simple blog application built with Next.js to demonstrate its basic features, including static site generation and dynamic routing.
 - **GitHub Repository**: [GitHub Link](https://github.com/taha-amin/nextjs-blog)
 - **Invite Link**: [Live Site](https://nextjs-blog-mu-snowy-13.vercel.app/)
-
-### Project 4: NetiBot
-
-![NetiBot](src/Assets/Projects/netibot.png)
-
-- **Description**: Dynamic and entertaining Discord bot designed to enhance your server with a variety of fun & interactive commands.
-- **GitHub Repository**: [GitHub Link](https://github.com/NetiBot/NetiBotApp)
-- **Invite Link**: [Invite Link](https://discord.com/api/oauth2/authorize?client_id=997611125887733923&permissions=8&scope=bot%20applications.commands)
 
 ## Skills
 
