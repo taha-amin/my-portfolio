@@ -1,4 +1,5 @@
 import React from "react";
+import MasjidFurqanPDX from '../Assets/Projects/masjidfurqan.png';
 import Assaber from '../Assets/Projects/AssaberLogo.png';
 import JobApp from "../Assets/Projects/jobify.png";
 import Dashboard from "../Assets/Projects/financialdashboard.png";
@@ -8,6 +9,14 @@ import Blog from "../Assets/Projects/blog.png";
 const Work = () => {
   const projects = [
     // Add more projects here
+    {
+      title: "Masjid Furqan Website",
+      description:
+        "Built a clean, accessible site for Masjed Furqan.",
+      image: MasjidFurqanPDX,
+      demo: "https://masjidfurqanpdx.org/",
+      tech: ["Duda", "HTML", "CSS"],
+    },
     {
       title: "Masjed Assaber Website",
       description:
@@ -52,7 +61,7 @@ const Work = () => {
     >
       <div className="max-w-[1000px] mx-auto px-4 sm:px-8">
         <h2 className="text-3xl sm:text-4xl font-bold mb-2 dark:text-white transition-colors duration-200">
-          Featured Projects
+          Featured Client Websites and Projects
         </h2>
         <p className="text-gray-600 dark:text-gray-400 mb-8 sm:mb-12 transition-colors duration-200">
           Some things I've built
