@@ -5,11 +5,21 @@ import Assaber from '../Assets/Projects/AssaberLogo.png';
 import JobApp from "../Assets/Projects/jobify.png";
 import Dashboard from "../Assets/Projects/financialdashboard.png";
 import Blog from "../Assets/Projects/blog.png";
+import Bisbas from "../Assets/Projects/bisbaspdx.png";
 
 
 const Work = () => {
   const projects = [
     // Add more projects here
+    {
+      title: "Bisbas Website",
+      description:
+        "Designed and developed a responsive e-commerce website for Bisbas Sauce & Catering, featuring product listings, a shopping cart, and secure checkout powered by Stripe.",
+      image: Bisbas,
+      demo: "https://bisbaspdx.com/",
+      github: "https://github.com/taha-amin/bisbas-web",
+      tech: ["Next.js", "TypeScript", "Tailwind CSS", "Stripe", "Netlify"],
+    },
     {
       title: "Masjid Furqan Website",
       description:
