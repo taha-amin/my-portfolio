@@ -38,8 +38,8 @@ const Home = () => {
           </h2>
           <p className="text-gray-600 dark:text-gray-300 max-w-[600px] leading-relaxed transition-colors duration-200">
             Over the years I've delivered optimized, user-focused applications,
-            specializing in scalable web solutions with rich user interfaces
-            built using JavaScript. Currently, I'm building innovative AI agent
+            specializing in scalable web solutions with rich user interfaces.
+            {/* built using JavaScript. Currently, I'm building innovative AI agent
             solutions at{" "}
             <a
               href="https://www.argoh.dev/"
@@ -48,7 +48,7 @@ const Home = () => {
               rel="noreferrer"
             >
               Argoh.dev
-            </a>
+            </a> */}
           </p>
           <p className="text-gray-600 dark:text-gray-300 max-w-[600px] leading-relaxed transition-colors duration-200">
             {/* ESLint was causing some issues with the spaces in this JSX code so I used curly braces with string literals to fix the issue */}
