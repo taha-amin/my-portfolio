@@ -1,5 +1,6 @@
 import React from "react";
-import MasjidFurqanPDX from '../Assets/Projects/masjidfurqan.png';
+//import MasjidFurqanPDX from '../Assets/Projects/masjidfurqan.png';
+import MasjidFurqanPDX from '../Assets/Projects/masjidfurqan2.png';
 import Assaber from '../Assets/Projects/AssaberLogo.png';
 import JobApp from "../Assets/Projects/jobify.png";
 import Dashboard from "../Assets/Projects/financialdashboard.png";
@@ -12,7 +13,7 @@ const Work = () => {
     {
       title: "Masjid Furqan Website",
       description:
-        "Built a clean, accessible site for Masjed Furqan.",
+        "Built a clean, accessible site for Masjed Furqan. Provided ongoing website maintenance, support, and improvements.",
       image: MasjidFurqanPDX,
       demo: "https://masjidfurqanpdx.org/",
       tech: ["Duda", "HTML", "CSS"],
@@ -20,10 +21,10 @@ const Work = () => {
     {
       title: "Masjed Assaber Website",
       description:
-        "Built a clean, accessible site for Masjed Assaber to share events, services, and updates with its community.",
+        "Built a clean, accessible site for Masjed Assaber to share events, services, and updates with its community. Provided ongoing website maintenance, support, and improvements.",
       image: Assaber,
       demo: "https://assaber.org/",
-      tech: ["WordPress", "HTML", "CSS"],
+      tech: ["JavaScript", "HTML", "CSS"],
     },
     {
       title: "Job Tracking App",
@@ -61,7 +62,7 @@ const Work = () => {
     >
       <div className="max-w-[1000px] mx-auto px-4 sm:px-8">
         <h2 className="text-3xl sm:text-4xl font-bold mb-2 dark:text-white transition-colors duration-200">
-          Featured Client Websites and Projects
+          Featured Client Projects
         </h2>
         <p className="text-gray-600 dark:text-gray-400 mb-8 sm:mb-12 transition-colors duration-200">
           Some things I've built
